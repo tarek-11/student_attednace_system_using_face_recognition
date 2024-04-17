@@ -1,0 +1,50 @@
+﻿
+@model IEnumerable<SessionModel>
+@inject ICourseRepository _courseRepository
+@{
+    var courses = await _courseRepository.GetAll();
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="my-4 text-center">Sessions Section</h1>
+<a class="btn btn-primary my-2" asp-action="Create">Create Session</a>
+
+@{
+if(Model.Count() > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(c => c.Id)</th>
+                <th>Course @Html.DisplayNameFor(c => c.Course.Name)</th>
+                <th>@Html.DisplayNameFor(c => c.SessionType)</th>
+                <th>@Html.DisplayNameFor(c => c.Group)</th>
+                <th>Details</th>
+                @if (User.IsInRole("Admin"))
+                 {
+                    <th>Edit</th>
+                    <th>Delete</th>
+                 }
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@courses.Where(i => i.Id == c.CourseId).FirstOrDefault().Name</td>
+                    <td>@c.SessionType</td>
+                    <td>@c.Group</td>
+                    <partial name="TableBottons" model="@c.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h2 class="bg-warning">No Sessions Available</h2>
+}
+}
+

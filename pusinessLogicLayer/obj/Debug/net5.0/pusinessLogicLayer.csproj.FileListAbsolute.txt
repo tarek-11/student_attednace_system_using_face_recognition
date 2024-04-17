@@ -1,0 +1,14 @@
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\pusinessLogicLayer.deps.json
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\pusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\ref\pusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\pusinessLogicLayer.pdb
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\ref\pusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\pusinessLogicLayer.pdb

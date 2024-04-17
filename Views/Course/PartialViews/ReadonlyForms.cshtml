@@ -1,0 +1,24 @@
+﻿@model CourseModel
+@inject IInstructorRepository _InstructorRepository
+@{
+    var instructor = await _InstructorRepository.Get(Model.InstructorId);
+}
+<div class="form-group">
+    <label class="col-form-label" asp-for="Code"></label>
+    <input class="form-control" asp-for="Code" readonly />
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Name"></label>
+    <input class="form-control" asp-for="Name" readonly />
+</div>
+
+<div class="form-group">
+    <label class="col-form-label">Teached By</label>
+    <input class="form-control" asp-for="@instructor.Name" readonly />
+</div>
+@*fsf*@
+<div class="form-group">
+    <label class="col-form-label">Course Grade</label>
+    <input class="form-control" asp-for="Grade" readonly />
+</div>

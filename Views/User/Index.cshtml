@@ -1,0 +1,43 @@
+﻿
+@model IEnumerable<ApplicationUser>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1 class="my-4 text-center">Users Section</h1>
+
+@{
+if(Model.Count() > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(c => c.UserName)</th>
+                <th>@Html.DisplayNameFor(c => c.PhoneNumber)</th>
+                <th>@Html.DisplayNameFor(c => c.UserRoleName)</th>
+                <th>Details</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model)
+            {
+                <tr>
+                    <td>@c.UserName</td>
+                    <td>@c.PhoneNumber</td>
+                    <td>@c.UserRoleName</td>
+                    <td><a asp-action="Details" asp-route-id="@c.Id" class="btn btn-warning">Details</a></td>
+                    <td><a asp-action="Edit" asp-route-id="@c.Id" class="btn btn-info">update</a></td>
+                    <td><a asp-action="Delete" asp-route-id="@c.Id" class="btn btn-danger">Delete</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+<h2 class="bg-warning">No Students Available</h2>
+}
+}
+

@@ -1,0 +1,34 @@
+﻿@model SessionModel
+@inject ICourseRepository _CourseRepository
+@{
+    var Courses = new SelectList(await _CourseRepository.GetAll(), "Id", "Name");
+}
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="CourseId">Course</label>
+    <select class="form-control" asp-for="CourseId" asp-items="Courses">
+        <option value="@null">-- Select Course --</option>
+    </select>
+    <span class="text-danger" asp-validation-for="CourseId"></span>
+</div>
+@*lmljn*@
+<div class="form-group">
+    <label class="col-form-label" asp-for="SessionType"></label>
+    <select class="form-control" asp-for="SessionType" asp-items="Html.GetEnumSelectList<SessionTypeEnum>()">
+        <option value="">-- Select Session Type --</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Group"></label>
+    <select class="form-control" asp-for="Group" asp-items="Html.GetEnumSelectList<GroupEnum>()">
+        <option value="">-- Select Group --</option>
+    </select>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Location"></label>
+    <select class="form-control" asp-for="Location" asp-items="Html.GetEnumSelectList<LocationEnum>()">
+        <option value="">-- Select Location --</option>
+    </select>
+</div>

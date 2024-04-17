@@ -1,0 +1,28 @@
+﻿@model SessionModel
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1 class="text-center">Create New Session</h1>
+
+<form asp-action="Create">
+
+    <partial name="PartialViews/ReadWriteForms" model="@Model" />
+
+
+    <div class="form-group">
+        <label class="col-form-label" asp-for="AtendanceDuration"></label>
+        <input class="form-control" asp-for="AtendanceDuration" />
+        <span class="text-danger" asp-validation-for="AtendanceDuration"></span>
+    </div>
+
+    <input type="submit" value="submit" class="btn btn-primary m-3" />
+    <a asp-action="Index" class="btn btn-info m-3">Cancel</a>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+

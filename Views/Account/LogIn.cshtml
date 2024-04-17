@@ -1,0 +1,29 @@
+﻿@model LogInModel
+@{
+    ViewData["Title"] = "LogIn";
+    Layout = "_AuthLayout";
+}
+<div class="main-agileinfo">
+    <div class="agileits-top">
+        <form method="post" asp-action="LogIn">
+            <input class="text email" asp-for="Email" placeholder="Email" required="">
+            <input class="text" asp-for="PassWord" placeholder="Password" required="">
+            <div class="wthree-text">
+                <label class="anim">
+                    <input asp-for="RememberMe" class="checkbox">
+                    <span>Remeber Me</span>
+                </label>
+                <div class="clear"> </div>
+            </div>
+            <input type="submit" value="SIGNIN">
+        </form>
+        <p>Don't have an Account? <a asp-action="Register"> Register Now!</a></p>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}
+
+

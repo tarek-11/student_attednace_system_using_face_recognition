@@ -1,0 +1,31 @@
+﻿    @model CourseModel
+    @inject IInstructorRepository _InstructorRepository
+@{ 
+    var instructors = new SelectList(await _InstructorRepository.GetAll(), "Id", "Name");
+}
+<div class="form-group">
+    <label class="col-form-label" asp-for="Code"></label>
+    <input class="form-control" asp-for="Code" />
+    <span class="text-danger" asp-validation-for="Code"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="Name"></label>
+    <input class="form-control" asp-for="Name" />
+    <span class="text-danger" asp-validation-for="Name"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="InstructorId"></label>
+    <select class="form-control" asp-for="InstructorId" asp-items="instructors">
+        <option value="@null">-- Select Instructor --</option>
+    </select>
+    <span class="text-danger" asp-validation-for="InstructorId"></span>
+</div>
+  @*lmljn*@
+<div class="form-group">
+    <label class="col-form-label" asp-for="Grade"></label>
+    <select class="form-control" asp-for="Grade" asp-items="Html.GetEnumSelectList<GradeEnum>()">
+        <option value="">-- Select Course Grade --</option>
+    </select>
+</div>

@@ -1,0 +1,35 @@
+﻿@model SessionModel
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="SessionTime"></label>
+    <input class="form-control" asp-for="SessionTime" readonly />
+</div>
+
+
+<div class="form-group">
+    <label class="col-form-label">Course Name</label>
+    <input class="form-control" asp-for="Course.Name" readonly />
+</div>
+
+<div class="form-group" hidden readonly>
+    <label class="col-form-label"hidden readonly>Course Name</label>
+    <input class="form-control" asp-for="CourseId" hidden readonly />
+</div>
+@*fsf*@
+<div class="form-group">
+    <label class="col-form-label">Session Type</label>
+    <input class="form-control" asp-for="SessionType" readonly />
+</div>
+
+
+<div class="form-group">
+    <label class="col-form-label">Location</label>
+    <input class="form-control" asp-for="Location" readonly />
+</div>
+
+<div class="form-group">
+    <label class="col-form-label">Group</label>
+    <input class="form-control" asp-for="Group" readonly />
+</div>
+@*//////////////////////////////*@
+

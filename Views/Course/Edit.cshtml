@@ -1,0 +1,22 @@
+﻿@model CourseModel
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1 class="text-center">Edit Course Data</h1>
+
+<form asp-action="Edit">
+    <div class="form-group">
+        <input class="form-control" asp-for="Id" hidden readonly />
+    </div>
+    <partial name="PartialViews/ReadWriteForms" model="@Model"/>
+
+    <input type="submit" value="submit" class="btn btn-primary m-3" />
+    <a asp-action="Index" class="btn btn-info m-3">Cancel</a>
+</form>
+
+@section Scripts{
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+}
+

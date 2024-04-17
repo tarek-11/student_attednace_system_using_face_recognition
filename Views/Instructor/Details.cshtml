@@ -1,0 +1,14 @@
+﻿@model InstructorModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="text-center m-4" >Instructors Details</h1>
+
+<div>
+
+    <partial name="PartialViews/ReadonlyForms" model="@Model" />
+    
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning m-3">Edit</a>
+    <a asp-action="Index" class="btn btn-info m-3">Back To list</a>
+</div>

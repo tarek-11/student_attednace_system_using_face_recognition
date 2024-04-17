@@ -1,0 +1,18 @@
+﻿@model CourseModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Are you Sure You Want To Delete This Element</h1>
+
+<form asp-action="Delete">
+    <div class="form-group">
+        <input class="form-control" asp-for="Id" hidden readonly />
+    </div>
+
+    <partial name="PartialViews/ReadonlyForms" model="@Model" />
+    
+    <input type="submit" value="Delete" class="btn btn-danger m-3" />
+    <a asp-action="Index" class="btn btn-info m-3">Cancel</a>
+</form>
+

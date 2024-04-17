@@ -1,0 +1,44 @@
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.deps.json
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\ref\BusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.pdb
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\ref\BusinessLogicLayer.dll
+C:\Users\Dell\source\repos\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.pdb
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.deps.json
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.dll
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.pdb
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.CopyComplete
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.dll
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\refint\BusinessLogicLayer.dll
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.pdb
+D:\kollia\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\ref\BusinessLogicLayer.dll
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.deps.json
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.dll
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\BusinessLogicLayer.pdb
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.dll
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\bin\Debug\net5.0\DataAccessLayer.pdb
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.AssemblyInfo.cs
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.csproj.CopyComplete
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.dll
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\refint\BusinessLogicLayer.dll
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\BusinessLogicLayer.pdb
+D:\New folder (5)\Graduation Project MVC (3) (1)\Graduation Project MVC\pusinessLogicLayer\obj\Debug\net5.0\ref\BusinessLogicLayer.dll

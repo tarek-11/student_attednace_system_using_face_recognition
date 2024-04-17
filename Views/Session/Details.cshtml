@@ -1,0 +1,59 @@
+﻿@model SessionModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1 class="text-center m-4">Session Details</h1>
+
+<div>
+
+
+    <div class="form-group">
+        <input class="form-control" asp-for="Id" readonly />
+    </div>
+
+    <partial name="PartialViews/ReadonlyForms" model="@Model" />
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning m-3">Edit</a>
+    }
+
+    <a asp-action="Index" class="btn btn-info m-3">Back To list</a>
+</div>
+
+<h1 class="my-4 text-center">Students Who Atteded This Session</h1>
+
+@{
+    if (Model.Students?.Count() > 0)
+    {
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(c => c.Students.FirstOrDefault().Name)</th>
+                    <th>@Html.DisplayNameFor(c => c.Students.FirstOrDefault().Grade)</th>
+                    <th>Details</th>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <th>Edit</th>
+                        <th>Delete</th>
+                    }
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var c in Model.Students)
+                {
+                    <tr>
+                        <td>@c.Name</td>
+                        <td>@c.Grade</td>
+                        <partial name="TableBottons" model="@c.Id" />
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <h2 class="bg-warning">No Students Attended this Session</h2>
+    }
+}

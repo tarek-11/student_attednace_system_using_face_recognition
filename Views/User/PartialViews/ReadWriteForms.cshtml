@@ -1,0 +1,24 @@
+﻿@model ApplicationUser
+@inject RoleManager<IdentityRole> _roleManager
+@{
+    var roles = new SelectList( _roleManager.Roles, "Name");
+}
+<div class="form-group">
+    <label class="col-form-label" asp-for="UserName"></label>
+    <input class="form-control" asp-for="UserName" />
+    <span class="text-danger" asp-validation-for="UserName"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="UserRoleName"></label>
+    <select class="form-control" asp-for="UserRoleName" asp-items="@roles">
+        <option value="@null">-- Select Role --</option>
+    </select>
+    <span class="text-danger" asp-validation-for="@roles"></span>
+</div>
+
+<div class="form-group">
+    <label class="col-form-label" asp-for="PhoneNumber"></label>
+    <input class="form-control" asp-for="PhoneNumber" />
+    <span class="text-danger" asp-validation-for="PhoneNumber"></span>
+</div>

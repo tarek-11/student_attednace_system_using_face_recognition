@@ -1,0 +1,58 @@
+﻿@model StudentModel
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Are you Sure You Want To Delete This Element</h1>
+
+<form asp-action="Delete">
+    <div class="form-group">
+        <input class="form-control" asp-for="Id" hidden readonly />
+    </div>
+
+    <div class="form-group">
+        <input class="form-control" asp-for="ImageName" hidden readonly />
+    </div>
+
+    <partial name="PartialViews/ReadonlyForms" model="@Model" />
+
+    <input type="submit" value="Delete" class="btn btn-danger m-3" />
+    <a asp-action="Index" class="btn btn-info m-3">Cancel</a>
+</form>
+<h1 class="my-4 text-center">Sessions the Student atteneded</h1>
+
+@if (Model.Sessions.Count() > 0)
+{
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(c => c.Sessions.FirstOrDefault().Id)</th>
+                <th>@Html.DisplayNameFor(c => c.Sessions.FirstOrDefault().SessionType)</th>
+                <th>@Html.DisplayNameFor(c => c.Sessions.FirstOrDefault().SessionTime)</th>
+                <th>Details</th>
+                @if (User.IsInRole("Admin"))
+                {
+                    <th>Edit</th>
+                    <th>Delete</th>
+                }
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model.Sessions)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.SessionType</td>
+                    <td>@c.SessionTime</td>
+                    <partial name="TableBottons" model="@c.Id" />
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <h2 class="bg-warning">No Sessions Attended by this Student</h2>
+}
+
